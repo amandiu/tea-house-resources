@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: #ffffff;
+      }
+      .googleFont {
+        font-family: "Manrope", sans-serif;
+      }
+      .primaryBTnColor {
+        color: #020617;
+      }
+      .cardStyle {
+        border-radius: 10px;
+        background: linear-gradient(
+          180deg,
+          #f4f4f4 0%,
+          rgba(244, 244, 244, 0) 100%
+        );
+      }
+    </style>
+    <!-- DaisyUi with Cnd -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Using Tailwin Framwork</title>
+  </head>
+  <body class="googleFont">
+    <!-- banner style with tailwin -->
+    <section>
+      <div class="hero min-h-screen bg-primary-content lg:pl-40 lg:pr-20">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="relative">
+            <img
+              src="/images/banner.png"
+              class="lg:max-w-sm rounded-lg shadow-2xl"
+            />
+            <div
+              class="justify-around absolute left-6 bottom-4 bg-primary-content rounded-md shadow-lg shadow-indigo-500/40 text-start flex items-center py-3 px-3"
+            >
+              <div class="rating mr-3">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+              </div>
+              <div>
+                <p class="text-3xl p-0 font-extrabold primaryBTnColor">5.00</p>
+                <p class="text-sm text-slate-400 font-semibold">
+                  Trust Pilot Ratings
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="md:p-20 lg:p-0">
+            <h1 class="text-4xl lg:text-7xl text-black font-extrabold">
+              It's good <br />
+              tea time at The Tea House
+            </h1>
+            <p class="py-6 text-2xl text-slate-400 font-medium">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button
+              class="btn btn-primary bg-gradient-to-r from-orange-400 to-orange-600 border-0 lg:text-2xl lg:font-bold font-medium text-base"
+            >
+              Explore More
+              <img
+                class="lg:w-6 lg:h-6 h-3 w-3"
+                src="/images/arrow.png"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Secend Banner -->
+    <section>
+      <div class="mt-4 bg-primary-content lg:pl-40 lg:pr-20 text-center">
+        <h1 class="text-4xl lg:text-5xl text-black font-extrabold">
+          Our Featured Products
+        </h1>
+        <p class="py-6 text-xl text-slate-400 font-medium">
+          Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+          Taste Buds.
+        </p>
+
+        <div
+          class="mt-0 gap-4 grid lg:grid-cols-4 grid-cols-1 md:grid-cols-3 px-6"
+        >
+          <!-- First card -->
+          <div class="card cardStyle py-4">
+            <figure>
+              <img src="/images/tea-1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body flex items-center">
+              <h2 class="card-title text-2xl font-extrabold">Milk Tea</h2>
+              <p class="text-lg font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <!-- Secend card -->
+          <div class="card cardStyle py-4">
+            <figure>
+              <img src="/images/tea-2.png" alt="Shoes" />
+            </figure>
+            <div class="card-body flex items-center">
+              <h2 class="card-title text-2xl font-extrabold">Black Tea</h2>
+              <p class="text-lg font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <!-- Third card -->
+          <div class="card cardStyle py-4">
+            <figure>
+              <img src="/images/tea-1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body flex items-center">
+              <h2 class="card-title text-2xl font-extrabold">Lemon Tea</h2>
+              <p class="text-lg font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <!-- Forth card -->
+          <div class="card cardStyle py-4">
+            <figure>
+              <img src="/images/tea-1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body flex items-center">
+              <h2 class="card-title text-2xl font-extrabold">Green Tea</h2>
+              <p class="text-lg font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Great Tea, Freshly Presented Section -->
+    <section>
+      <div class="hero min-h-screen bg-primary-content lg:pl-40 lg:pr-20">
+        <div
+          class="hero-content min-w-screen justify-around flex-col lg:flex-row grid gap-7 grid-cols-1 lg:grid-cols-2 md:grid-cols-2"
+        >
+          <div
+            class="relative grid gap-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1"
+          >
+            <div
+              class="h-32"
+              style="
+                border-radius: 10px;
+                opacity: 0.10000000149011612;
+                background: var(
+                  --linear,
+                  linear-gradient(270deg, #f00 0%, #ff8938 100%)
+                );
+              "
+            ></div>
+            <div
+              class="py-4 flex justify-center"
+              style="border-radius: 10px; background: rgba(230, 166, 35, 0.1)"
+            >
+              <img
+                src="/images/fresh-1.png"
+                class="max-w-sm rounded-lg shadow-2xl"
+              />
+            </div>
+            <div
+              class="py-4 relative flex justify-center lg:bottom-44 md:bottom-44 mt-0"
+              style="border-radius: 10px; background: rgba(87, 118, 57, 0.1)"
+            >
+              <!--   margin-top: -180px; -->
+              <img
+                src="/images/fresh-2.png"
+                class="max-w-sm rounded-lg shadow-2xl"
+              />
+            </div>
+            <div
+              class="h-32"
+              style="
+                border-radius: 10px;
+                background: linear-gradient(
+                  90deg,
+                  #d9d9d9 0%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+              "
+            ></div>
+          </div>
+
+          <div class="md:mt-[-150px] lg:mt-[-150px]">
+            <h1 class="text-5xl text-black font-extrabold">
+              Great Tea, Freshly <br />
+              Presented
+            </h1>
+            <p class="py-3 text-base text-slate-400 font-medium">
+              The meaning of gong cha is chanese is to provide the best tea to
+              emperor from all possessions . It represents the highest quality
+              and self expectation. Establishing in 2006, Gong cha had been
+              deeply appreciated by its custoers because of good words of mouth
+              and unique customized service orginated from Taiwan.
+            </p>
+            <h3 class="text-lg text-black font-extrabold">Unique Taste</h3>
+            <p class="py-3 text-base text-slate-400 font-medium">
+              A Unique and different style from other teapots gives a luxurious
+              and minimalist impression
+            </p>
+            <h3 class="text-lg text-black font-extrabold">Premium Quality</h3>
+            <p class="py-3 text-base text-slate-400 font-medium">
+              Premium Quality that makes tea more elegant and more durable when
+              you use it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
